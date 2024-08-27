@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTitle{
+  font-size: 3rem;
+  padding: 15px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sectionText{
+  font-size: 2rem;
+}
+
+.sectionSrv{
+  color: white;
+}
+/* NavBar */
+
+.navbar{
+  padding: 2rem;
+}
+
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* sección Hero */
+.fondoHero{
+  background-image: url(/images/bkgs/Home.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
+/* sección sectionDark */
+.sectionDark{
+  background-image: url(/images/bkgs/bkg2.png);
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+  color:white ; 
+}
+
+/* aboutUs */
+.aboutUs{
+  height: 500px;
+  padding: 10px;
+}
+
+.aboutUs .contenedor{
+  max-width: 600px;
+  text-align: center;  
+}
+
+/* services */
+.services{
+  padding: 20px 20px 40px 20px;
+}
+
+.services .columna{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.services .columna:hover{
+  transform: scale(1.2);
+}
+
+.servicesTitle{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+
+}
+
+.servicesTitle{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.imgSrv{
+  height: 250px;
+}
+
+/* contacto */
+.fondoContact{
+  background-image: url(/images/bkgs/contactOrg.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;    
+  background-size: cover;
+}
+
+
+
+/* mediasQ */
+@media screen and (max-width:767px) {
+  .navbar-brand{
+    display: none;
+  }
+}

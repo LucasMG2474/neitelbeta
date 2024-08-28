@@ -41,7 +41,7 @@ section{
 
 /* sección Hero */
 .fondoHero{
-  background-image: url(/images/bkgs/Home.png);
+  background-image: url(./images/bkgs/Home.png);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ section{
 
 /* sección sectionDark */
 .sectionDark{
-  background-image: url(/images/bkgs/bkg2.png);
+  background-image: url(./images/bkgs/bkg2.png);
     height: 85vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@ section{
 
 /* contacto */
 .fondoContact{
-  background-image: url(/images/bkgs/contactOrg.png);
+  background-image: url(./images/bkgs/contactOrg.png);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;    

@@ -93,13 +93,6 @@ section{
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
-
-}
-
-.servicesTitle{
-  font-size: 25px;
-  font-weight: bold;
-  margin: 10px 0;
 }
 
 .imgSrv{
@@ -108,11 +101,80 @@ section{
 
 /* contacto */
 .fondoContact{
-  background-image: url(../images/bkgs/contactOrg.png);
-  height: 100vh;
+  background-image: url(../images/bkgs/contact.png);
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;    
   background-size: cover;
+}
+
+.sectionContact {
+  color: white;
+  text-align: center;
+}
+
+.container{
+  width: 60%;
+  padding:45px;
+  border-radius: 0;  
+}
+
+.row{
+  box-shadow: rgba(99,99,99,0.2)0px 2px 8px 0px;
+}
+
+.col-md-7{
+  padding: 40px;
+}
+
+.col-md-5{
+  background-color: #1089ff;
+  padding: 40px;
+}
+
+.form-control{
+  height: 52;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-radius: 2px;
+  box-sizing: none! important;
+  border: 2px solid rgba(2, 2, 2, 0.1);
+}
+
+.bi{
+  font-size: 20px;
+}
+
+.d-flex p{
+  font-size: 18px;
+  padding-left: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* footer */
+
+.footer{
+  min-height: 500px;
+}
+
+.iconosRedes{
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.iconosRedes a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+
 }
 
 
@@ -123,3 +185,12 @@ section{
     display: none;
   }
 }
+
+/* @media only screen and (max-width:600px){
+  .container{
+    width: 100%;
+    position:absolute;
+    left: 50%;
+    top: 90%
+  }
+} */

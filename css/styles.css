@@ -39,6 +39,10 @@ section{
   justify-content: space-between;
 }
 
+.nav-item a:hover{
+  text-decoration: underline 5px;
+}
+
 /* sección Hero */
 .fondoHero{
   background-image: url(../images/bkgs/Home.png);
@@ -52,7 +56,7 @@ section{
 /* sección sectionDark */
 .sectionDark{
   background-image: url(../images/bkgs/bkg2.png);
-    height: 85vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
@@ -102,7 +106,7 @@ section{
 /* contacto */
 .fondoContact{
   background-image: url(../images/bkgs/contactbkg.png);
-  height: 85vh;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;    
   background-size: cover;
@@ -115,7 +119,7 @@ section{
 
 .container{
   width: 60%;
-  padding: 60px;
+  padding: 60px;  
   border-radius: 0;  
 }
 
@@ -124,12 +128,12 @@ section{
 }
 
 .col-md-7{
-  padding: 40px;
+  padding: 40px;  
 }
 
 .col-md-5{
   background-color: #114c7b;
-  padding: 40px;
+  padding: 40px;  
 }
 
 .form-control{
@@ -157,11 +161,14 @@ section{
 .footer{
   height: 500px;  
   padding: 20px;
-  color: #aeaeae;
-  
+  color: #aeaeae;  
 }
 
-
+.footerLogo{
+  height: 48px;
+  width: 110px;
+  margin: 30px;
+}
 
 .iconosRedes a{
   width: 50px;
@@ -169,10 +176,16 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 2px;
   margin: 10px;
   border: 2px solid white;
   border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconosRedes a:hover{
+  background-color: white;
+
 }
 
 .iconosRedes{

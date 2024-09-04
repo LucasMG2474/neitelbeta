@@ -56,10 +56,14 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#aboutUs">¿QUIÉNES SOMOS?</a>
+                <a class="nav-link text-white" href="#aboutUs"
+                  >¿QUIÉNES SOMOS?</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#services">NUESTROS SERVICIOS</a>
+                <a class="nav-link text-white" href="#ourServices"
+                  >NUESTROS SERVICIOS</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#contact">CONTACTO</a>
@@ -71,7 +75,7 @@
     </header>
     <main>
       <!-- seccíon Hero -->
-      <section class="hero align-items-stretch">
+      <section id="home" class="hero align-items-stretch">
         <div class="fondoHero d-flex flex-column"></div>
       </section>
       <!-- ¿QUIÉNES SOMOS? -->
@@ -84,43 +88,52 @@
         </div>
       </section>
       <!-- NUESTROS SERVICIOS -->
-      <section id="services" class="services sectionSrv">
-        <div class="container-fluid text-center">
-          <h2 class="sectionTitle">Nuestros Servicios</h2>
+      <section
+        id="ourServices"
+        class="servicios sectionLight d-flex flex-column"
+      >
+        <h2 class="sectionTitle">Nuestros Servicios</h2>
+        <div class="container text-center serviciosContenedor">
           <div class="row">
-            <!-- tecnología -->
-            <div class="columna col-12 col-md-4">
-              <p class="servicesTitle">TECNOLOGÍA</p>
-              <img
-                class="imgSrv"
-                src="images/serviceImg/tech.png"
-                alt="tecnología"
-              />
+            <!-- Tecnología -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="tech">
+                <img src="images/serviceImg/tech.png" alt="img tecnología" />
+                <div class="overlay">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >TECNOLOGÍA</a
+                  >
+                </div>
+              </div>
             </div>
-
-            <!-- indumentaria & acc -->
-            <div class="columna col-12 col-md-4">
-              <p class="servicesTitle">INDUMENTARIA Y ACC.</p>
-              <img
-                class="imgSrv"
-                src="images/serviceImg/tech.png"
-                alt="tecnología"
-              />
+            <!-- Indumentaria -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="tech">
+                <img src="images/serviceImg/tech.png" alt="img tecnología" />
+                <div class="overlay">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >INDUMENTARIA & ACCESORIOS</a
+                  >
+                </div>
+              </div>
             </div>
-
-            <!-- consultoría digital -->
-            <div class="columna col-12 col-md-4">
-              <p class="servicesTitle">CONSULTORÍA DIGITAL</p>
-              <img
-                class="imgSrv"
-                src="images/serviceImg/consult.png"
-                alt="tecnología"
-              />
+            <!-- CD -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="tech">
+                <img
+                  src="images/serviceImg/consult.png"
+                  alt="img Consultoría Digital"
+                />
+                <div class="overlay">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >CONSULTORÍA DIGITAL</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       <!-- CONTACTO -->
       <section id="contact" class="contact align-items-stretch">
         <div class="fondoContact d-flex flex-column">
@@ -190,11 +203,9 @@
                 <div class="mt-5">
                   <div class="d-flex">
                     <i class="bi bi-geo-alt-fill sectionContact"></i>
-                    <p class="sectionContact">
-                          Av. Siempre Viva 21th, Mendoza
-                    </p>
+                    <p class="sectionContact">Av. Siempre Viva 21th, Mendoza</p>
                   </div>
-                    <hr />
+                  <hr />
                   <div class="d-flex">
                     <i class="bi bi-telephone-fill sectionContact"></i>
                     <p class="sectionContact">261-8888888</p>
@@ -218,24 +229,41 @@
       </section>
     </main>
     <!-- footer -->
-    <footer
-      class="d-flex flex-column align-items-center justify-content-center" >
-      <img class="footerLogo" src="images/logo/logo neitel bk.png" alt="footer logo">
-      <div class="iconosRedes d-flex flex-wrap align-items-center justify-content-center">
-        <a href= #">        
-          <i class="bi bi-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="bi bi-tiktok"></i>
-        </a>
-      </div>      
-      <div class="rights">Creado por LGA by Neitel (2024) &#169;</div>
+    <footer>
+      <div class="container-fluid text-center p-7">
+        <div class="row">
+          <div class="col">
+            <div class="proyectFooter">
+              <img src="images/logo/logo neitel bk.png" alt="img footer" />
+              <p>Av. Siempre Viva 21th, Mendoza</p>
+              <p>261-8888888</p>
+              <p>neitelsrl@gmail.com</p>
+              <p>www.neitel.com</p>
+            </div>
+          </div>
+          <div class="col linksFooter">
+            <h5 class="text-primary">Enlaces</h5>
+            <a href="#home">Inicio</a>
+            <a href="#aboutUs">¿Quiénes Somos?</a>
+            <a href="#ourServices">Nuestros Servicios</a>
+            <a href="#contact">Contacto</a>
+          </div>
+          <div
+            class="col d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="iconosRedes d-flex flex-wrap align-items-center justify-content-center"
+            >
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="rights">Creado por LGA by Neitel (2024) &#169;</div>
+      </div>
     </footer>
 
     <script

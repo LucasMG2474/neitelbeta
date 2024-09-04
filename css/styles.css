@@ -18,16 +18,15 @@ section{
 .sectionTitle{
   font-size: 3rem;
   padding: 15px 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:white;
 }
 
 .sectionText{
   font-size: 2rem;
 }
 
-.sectionSrv{
-  color: white;
-}
+
 /* NavBar */
 
 .navbar{
@@ -76,31 +75,50 @@ section{
 }
 
 /* services */
-.services{
-  padding: 20px 20px 40px 20px;
+.servicios{
+  padding: 40px;
 }
 
-.services .columna{
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all 0.2s ease-in;
+.servicios img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
 }
 
-.services .columna:hover{
-  transform: scale(1.2);
+.serviciosContenedor{
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
-.servicesTitle{
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay a{
   font-size: 25px;
   font-weight: bold;
-  margin: 10px 0;
+  margin-bottom: 0;
 }
 
-.imgSrv{
-  height: 250px;
+.tech{
+  position: relative;
+}
+
+.tech:hover .overlay{
+  opacity: 1;  
+}
+
+.tech:hover img{
+  opacity: 0.2;
 }
 
 /* contacto */
@@ -157,18 +175,29 @@ section{
 }
 
 /* footer */
-
-.footer{
-  height: 500px;  
-  padding: 20px;
-  color: #aeaeae; 
+.proyectFooter{
+  padding: 10px;
+  margin: 20px;
+  color: white;
 }
 
-.footerLogo{
+.proyectFooter img{
   height: 48px;
   width: 110px;
-  margin: 30px;
+  margin: 10px;
 }
+
+.linksFooter{
+  padding: 60px;    
+}
+
+.linksFooter a{
+  color: white;
+  padding: 10px;  
+  display: flex;
+  justify-content: center;
+}
+
 
 .iconosRedes a{
   width: 50px;
@@ -196,7 +225,7 @@ section{
   font-size: 15px;
   color: #aeaeae;
   padding: 20px;
-}
+} 
 
 
 /* mediasQ */
@@ -206,3 +235,8 @@ section{
   }
 }
 
+@media screen and (max-width:400px) {
+  .overlay a{
+    font-size: 18px;
+  }
+}
